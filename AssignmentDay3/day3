@@ -1,0 +1,112 @@
+Q1: Can we have a non-abstract method inside an interface?
+
+Yes, before java 8 interface have only abstract method but after java 8 we can have non abstract method as well in the form of 
+static and default methods in the interface.
+
+public interface Java {
+
+default void coding() {
+	System.out.println("inside coding method of Java interface");
+}
+	
+static void DryRun() {
+	System.out.println("inside DryRun method of Java interface");
+}
+void sleep();
+	
+}
+
+========================================================================================================================================
+
+Q2: Implement 2 interfaces in a single class having same default methods and observe the catch there?
+
+if we have implemented 2 interfaces and both interfaces having same signature of method so they should be exact the same 
+return type and parameter as well otherwise it can occur a compile time error.
+
+
+========================================================================================================================================
+
+
+Q3: Observe the following code and answer
+// Shape.java
+public class Shape {
+protected void display() {
+System.out.println("Display-base");
+}
+}
+// Circle.java
+public class Circle extends Shape { <
+< access - modifier > void display() {
+System.out.println("Display-derived");
+}
+}
+
+
+ans: public and protected both can be used
+
+
+
+
+========================================================================================================================================
+
+
+Ques 4: Observe and answer.. also try to run and play
+around the code
+abstract class Car {
+static {
+System.out.print("1");
+}
+public Car(String name) {
+super();
+System.out.print("2");
+}
+{
+System.out.print("3");
+}
+}
+public class BlueCar extends Car {
+{
+System.out.print("4");
+}
+public BlueCar() {
+super("blue");
+System.out.print("5");
+}
+public static void main(String[] gears) {
+new BlueCar();
+}
+}
+
+	What will be the output of above code snippet?
+	Day 3: Assignment OOP Part-2 3
+	a. 23451
+	b. 12354
+	c. 13245
+	d. The code does not compile
+
+ans: 12345
+
+
+=======================================================================================================================================
+
+Ques 5: Observe the following code snippet
+class Math {
+public final double secret = 2;
+}
+class ComplexMath extends Math {
+public final double secret = 4;
+}
+public class InfiniteMath extends ComplexMath {
+public final double secret = 8;
+public static void main(String[] numbers) {
+Math math = new InfiniteMath();
+System.out.print(math.secret);
+}
+}
+	What will be the output of above code?
+	a. 2
+	b. 4
+	c. 8
+	d. The code does not compile
+	
+ans: 2	
