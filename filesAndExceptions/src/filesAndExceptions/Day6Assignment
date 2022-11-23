@@ -1,0 +1,80 @@
+Ques 1: Name some important classes available in the java.io package
+
+=> Following are the important classes in the Java.io package:
+
+	BufferedInputStream
+	BufferedOutputStream
+	BufferedReader
+	BufferedWriter
+	CharArrayReader
+	Console
+	DataOutputStream
+	File
+	FileDescriptor
+	FileInputStream
+	FilterReader
+	FilterWriter
+	InputStreamQues 
+	
+	
+
+2: Difference between FileReader and BufferedFileReader
+
+=> BufferReader
+   ===========
+   
+   . It is used to read characters from any type of character input stream (String, Files, etc.)
+   . It is faster than FileReader
+   . Much more efficient for reading files
+   . BufferedReader can be used to read a single character at a time as well as a line at a time.
+   
+   
+   FileReader
+   ==========
+   
+   . It can be used only for reading files
+   . Doesn’t use Buffer. Directly reads from the file by accessing the hard drive.
+   . It is slower than BufferReader
+   . less efficient for reading files
+   . It can read only one character at a time, can not read lines
+   
+   
+   
+   
+Ques 3: What is the most efficient way to read the content of a text file according to you in java
+
+=> I use the scanner to read the content of a text file because it parses primitive types and strings using regular expressions. 
+   A Scanner breaks its input into tokens using a delimiter pattern, which by default matches whitespace. 
+   The resulting tokens may then be converted into values of different types using the various next methods.   	   
+   
+   
+   
+Ques 4: How to process the binary files using java (i.e. reducing the pixels of an image file). 
+Give a rough idea of how would you process it using in-build library/external libraries in java  
+
+=> In Java itself, all the complexity of various image types is hidden, and we only work on BufferedImage. 
+   Java provides immediate access to the image pixels and color information and allows conversions and image processing.
+
+   Classes Required to Perform the Read and Write Operations: 
+
+   1. java.io.File: To read and write an image file, we must import the File class. 
+   					This class represents file and directory path names in general.
+
+   2. java.io.IOException: To handle errors, we use the IOException class. 
+
+
+   3. java.awt.image.BufferedImage: To hold the image, we create the BufferedImage object; we use BufferedImage class. 
+   									This object is used to store an image in RAM.
+
+   4. javax.imageio.ImageIO: To perform the image read-write operation, we will import the ImageIO class. 
+   							 This class has static methods to read and write an image.
+   							 
+   							 
+   							 
+   							 
+Ques 5: Why there are unchecked exceptions available in java if not complained about by the compiler. 
+	    Why this segregation of checked and unchecked exceptions?
+	    
+	    
+	    
+	    
