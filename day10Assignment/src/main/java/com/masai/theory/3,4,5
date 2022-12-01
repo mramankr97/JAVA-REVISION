@@ -1,0 +1,54 @@
+3. Some important features of Spring Boot?
+
+> The main aim of Spring Boot is to shorten code length and easily build web applications
+
+  Spring Boot Can be used for all layers of application development
+  
+  It is lightweight considering the POJO model
+  
+  In Spring Boot we no need to deploy WAR files
+  
+  Allows loose coupling and easy testing
+
+  It doesn't require XML configuration
+
+  
+  
+4. Compare Spring vs Spring Web vs Spring Boot?
+
+
+> Spring:
+  ======
+  Spring Framework is the most popular application development framework of Java. 
+  The main feature of the Spring Framework is dependency Injection or Inversion of Control (IoC). 
+  With the help of Spring Framework, we can develop a loosely coupled application.
+  
+  
+>  SpringBoot:
+   ===========
+   
+The main aim of Spring Boot is to shorten code length and easily build web applications
+Spring Boot Can be used for all layers of application development
+It is lightweight considering the POJO model
+In Spring Boot we no need to deploy WAR files
+Allows loose coupling and easy testing
+It doesn't require XML configuration
+
+
+> Spring Web:
+  ===========
+  
+  Spring MVC is a model view controller-based web framework under the Spring framework.
+  It provides ready to use features for building a web application.
+  It specifies each dependency separately.
+  It takes more time to achieve the productivity.
+  
+  
+  
+5. How to run spring boot application on customized port number (other than default 8080)  
+
+> In src/main/resource, on application.properties just chnage the port number
+
+server.port=8888;
+
+ 
